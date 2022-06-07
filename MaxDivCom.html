@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>MDC</title>
+        <script>
+            let num1 = parseInt(prompt("Digite o primeiro número:"));
+            let num2 = parseInt(prompt("Digite o segundo número:"));
+            let aux;
+
+            if(num2 > num1){            
+                document.write("O MDC de "+num2+" e "+num1+" é: ")            
+                aux = num1;
+                num1 = num2;
+                num2 = aux;
+            }else{
+                document.write("O MDC de "+num1+" e "+num2+" é: ")                
+            }    
+            while (num2 != 0){
+                let mod = num1%num2;
+                num1 = num2;
+                num2 = mod;
+            }
+            document.write(num1);
+        </script>
+    </head>
+</html>

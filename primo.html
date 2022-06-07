@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title> Número Primo </title>
+        <script>
+            let numero = parseInt(prompt("Digite um número que você deseja saber se é primo:"));
+            let cont = 0;
+
+            function primo(numero, cont){
+                for (let i=1; i<=numero; i++){
+                    if (numero%i == 0){
+                        cont ++;
+                    }
+                }
+                if (cont == 2){
+                    return 'O número é primo'
+                }else{
+                    return 'O número não é primo'
+                }
+            }
+
+            document.write(primo(numero, cont));
+        </script>
+    </head>
+</html>
